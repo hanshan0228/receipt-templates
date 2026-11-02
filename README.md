@@ -3,9 +3,12 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)](index.html)
 [![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)](styles/receipts.css)
+[![Live Demo](https://img.shields.io/badge/GitHub_Pages-Live_Demo-success)](https://hanshan0228.github.io/receipt-templates/)
 [![Online Receipt Maker](https://img.shields.io/badge/Interactive_Generator-receiptnumber.com-10b981)](https://receiptnumber.com)
 
 A clean, lightweight collection of **zero-dependency HTML & CSS receipt templates** designed for small businesses, freelancers, landlords, retail stores, and restaurants. Every template is 100% printable, responsive, and customizable.
+
+🌐 **Live Interactive Gallery & Print Preview**: [https://hanshan0228.github.io/receipt-templates/](https://hanshan0228.github.io/receipt-templates/)
 
 > 💡 **Looking for an interactive web builder?**  
 > If you need auto-calculated totals, sequential receipt numbers, currency toggles, or instant PDF/Excel exports, visit the free **[ReceiptNumber - Online Receipt Maker & Generator](https://receiptnumber.com)**.
