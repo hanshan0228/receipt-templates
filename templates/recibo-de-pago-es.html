@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modelo de Recibo de Pago y Dinero en Efectivo (Plantilla Imprimible)</title>
+  <link rel="stylesheet" href="../styles/receipts.css">
+  <style>
+    .toolbar { display: flex; gap: 12px; margin-bottom: 12px; }
+    .btn { background: #2563eb; color: #fff; border: none; border-radius: 6px; padding: 8px 16px; font-size: 14px; cursor: pointer; text-decoration: none; }
+    .btn-secondary { background: #475569; }
+    .btn:hover { opacity: 0.9; }
+    .es-badge { display: inline-block; background: #fef3c7; color: #92400e; border: 1px solid #fde68a; font-size: 11px; font-weight: 700; padding: 3px 8px; border-radius: 4px; text-transform: uppercase; }
+  </style>
+</head>
+<body>
+  <div class="toolbar no-print">
+    <button class="btn" onclick="window.print()">🖨️ Imprimir Recibo</button>
+    <a href="../index.html" class="btn btn-secondary">← Volver a la Galería</a>
+    <a href="https://receiptnumber.com/es/recibo-de-pago" target="_blank" rel="noopener" class="btn">⚡ Generador de Recibos en Línea</a>
+  </div>
+
+  <div class="receipt-card" style="max-width: 560px; border-left: 4px solid #f59e0b;">
+    <div class="receipt-header" style="text-align: left; display: flex; justify-content: space-between; align-items: flex-start;">
+      <div>
+        <div class="es-badge">Comprobante de Pago Oficial</div>
+        <h2 style="font-size: 22px; color: #0f172a; margin-top: 6px;">RECIBO DE PAGO</h2>
+        <div class="receipt-meta">Constancia de entrega de dinero en efectivo / transferencia</div>
+      </div>
+      <div style="text-align: right;">
+        <div style="font-size: 16px; font-weight: 700; color: #d97706;">N.º RECIBO: 2026-0814</div>
+        <div class="receipt-meta">Fecha: 02 de febrero de 2026</div>
+      </div>
+    </div>
+
+    <div class="receipt-divider"></div>
+
+    <div style="font-size: 14px; line-height: 1.8; color: #334155;">
+      <div><strong>Recibí de:</strong> D./Dña. {{PERSON_0k7d0j1k}} (NIF/DNI: 48920194-B)</div>
+      <div><strong>La cantidad de:</strong> <span style="font-size: 18px; font-weight: 700; color: #0f172a;">350,00 € (EUR)</span></div>
+      <div><strong>Importe en letras:</strong> Trescientos cincuenta euros con cero céntimos</div>
+      <div><strong>Por concepto de:</strong> Servicio profesional de diseño web y mantenimiento mensual</div>
+      <div><strong>Forma de pago:</strong> Transferencia bancaria (Ref: ES88-4920-1940)</div>
+    </div>
+
+    <div class="receipt-divider"></div>
+
+    <div class="receipt-totals" style="border: none; padding-top: 0;">
+      <div class="receipt-row">
+        <span>Base imponible:</span>
+        <span>289,26 €</span>
+      </div>
+      <div class="receipt-row">
+        <span>IVA aplicado (21%):</span>
+        <span>60,74 €</span>
+      </div>
+      <div class="receipt-row grand-total" style="color: #d97706;">
+        <span>TOTAL RECIBIDO</span>
+        <span>350,00 €</span>
+      </div>
+      <div class="receipt-row" style="margin-top: 6px; font-weight: 600;">
+        <span>Saldo pendiente:</span>
+        <span>0,00 € (PAGADO EN SU TOTALIDAD)</span>
+      </div>
+    </div>
+
+    <div class="receipt-signature-line" style="margin-top: 36px;">
+      <div>
+        <div>Recibí conforme (Firma del beneficiario):</div>
+        <div style="font-family: 'Brush Script MT', cursive, sans-serif; font-size: 22px; color: #1e3a8a; margin-top: 4px;">{{PERSON_f3h503up}}</div>
+        <div style="font-size: 11px; color: #64748b;">NIF: 74920183-K • Madrid, España</div>
+      </div>
+      <div style="text-align: right;">
+        <div>Conforme pagador:</div>
+        <div style="font-family: 'Brush Script MT', cursive, sans-serif; font-size: 22px; color: #1e3a8a; margin-top: 4px;">{{PERSON_0k7d0j1k}}</div>
+        <div style="font-size: 11px; color: #64748b;">Firma del cliente</div>
+      </div>
+    </div>
+
+    <div class="receipt-footer">
+      <p>Este documento sirve como justificante legal de pago para efectos contables y tributarios.</p>
+      <p style="margin-top: 6px; font-size: 10px; color: #94a3b8;">
+        Plantilla gratuita descargable de <a href="https://receiptnumber.com/es/recibo-de-pago" style="color: inherit; text-decoration: underline;">receiptnumber.com/es/recibo-de-pago</a>
+      </p>
+    </div>
+  </div>
+</body>
+</html>

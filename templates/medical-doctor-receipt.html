@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Medical Clinic & Healthcare Copay Receipt Template</title>
+  <link rel="stylesheet" href="../styles/receipts.css">
+  <style>
+    .toolbar { display: flex; gap: 12px; margin-bottom: 12px; }
+    .btn { background: #2563eb; color: #fff; border: none; border-radius: 6px; padding: 8px 16px; font-size: 14px; cursor: pointer; text-decoration: none; }
+    .btn-secondary { background: #475569; }
+    .btn:hover { opacity: 0.9; }
+    .med-badge { display: inline-block; background: #ecfeff; color: #0e7490; border: 1px solid #a5f3fc; font-size: 11px; font-weight: 700; padding: 3px 8px; border-radius: 4px; text-transform: uppercase; }
+    .med-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; font-size: 12px; margin: 12px 0; }
+    .med-box { background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 6px; padding: 8px 12px; }
+    .med-box strong { display: block; font-size: 11px; text-transform: uppercase; color: #64748b; margin-bottom: 2px; }
+  </style>
+</head>
+<body>
+  <div class="toolbar no-print">
+    <button class="btn" onclick="window.print()">🖨️ Print Receipt</button>
+    <a href="../index.html" class="btn btn-secondary">← Back to Gallery</a>
+    <a href="https://receiptnumber.com/receipt-template/excel" target="_blank" rel="noopener" class="btn">📊 Excel Medical Tracker</a>
+  </div>
+
+  <div class="receipt-card" style="max-width: 600px; border-top: 4px solid #0891b2;">
+    <div class="receipt-header" style="text-align: left; display: flex; justify-content: space-between; align-items: flex-start;">
+      <div>
+        <div class="med-badge">HSA / FSA Eligible Receipt</div>
+        <h2 style="font-size: 20px; color: #0f172a; margin-top: 6px;">BEACON FAMILY HEALTH CLINIC</h2>
+        <div class="receipt-meta">Dr. {{PERSON_0k4t062d}}, MD • NPI: 1982736401</div>
+        <div class="receipt-meta">{{ADDRESS_s50r7836}}, Suite 400, Chicago, IL 60614</div>
+        <div class="receipt-meta">Tel: {{PHONE_s8q425q4}}</div>
+      </div>
+      <div style="text-align: right;">
+        <div style="font-size: 14px; font-weight: 700; color: #0891b2;">RECEIPT #: MED-99214</div>
+        <div class="receipt-meta">Date: February 02, 2026</div>
+      </div>
+    </div>
+
+    <div class="receipt-divider"></div>
+
+    <div class="med-grid">
+      <div class="med-box">
+        <strong>Patient Name</strong>
+        <span>{{PERSON_y2k8e1rq}} (DOB: 05/14/1988)</span>
+      </div>
+      <div class="med-box">
+        <strong>Insurance Carrier</strong>
+        <span>BlueCross BlueShield (ID: BCB-883910)</span>
+      </div>
+      <div class="med-box">
+        <strong>Date of Service</strong>
+        <span>February 02, 2026</span>
+      </div>
+      <div class="med-box">
+        <strong>Payment Method</strong>
+        <span>HSA Health Debit Card (Visa ...4409)</span>
+      </div>
+    </div>
+
+    <table class="receipt-table">
+      <thead>
+        <tr>
+          <th>CPT Code</th>
+          <th>Clinical Description</th>
+          <th class="num">Billed</th>
+          <th class="num">Ins. Adj.</th>
+          <th class="num">Patient Paid</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>99214</td>
+          <td>Office Visit, Est. Patient (Level 4)</td>
+          <td class="num">$240.00</td>
+          <td class="num">-$205.00</td>
+          <td class="num">$35.00</td>
+        </tr>
+        <tr>
+          <td>80061</td>
+          <td>Lipid Panel Blood Test</td>
+          <td class="num">$65.00</td>
+          <td class="num">-$50.00</td>
+          <td class="num">$15.00</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="receipt-totals">
+      <div class="receipt-row">
+        <span>Total Clinic Charges Billed:</span>
+        <span>$305.00</span>
+      </div>
+      <div class="receipt-row">
+        <span>Contracted Insurance Adjustment:</span>
+        <span>-$255.00</span>
+      </div>
+      <div class="receipt-row grand-total" style="color: #0891b2;">
+        <span>TOTAL PATIENT COPAY PAID:</span>
+        <span>$50.00</span>
+      </div>
+      <div class="receipt-row" style="margin-top: 6px; font-weight: 600;">
+        <span>Patient Outstanding Balance:</span>
+        <span>$0.00 (PAID IN FULL)</span>
+      </div>
+    </div>
+
+    <div class="receipt-signature-line" style="margin-top: 32px;">
+      <div>
+        <div>Billing Specialist: {{PERSON_m703d1o5}}.</div>
+        <div style="font-size: 11px; color: #64748b;">Beacon Health Accounts Dept.</div>
+      </div>
+      <div style="text-align: right;">
+        <div>Valid for Flexible Spending Account (FSA) / HSA</div>
+      </div>
+    </div>
+
+    <div class="receipt-footer">
+      <p>Retain this medical copay receipt for your health insurance and FSA/HSA claim documentation.</p>
+      <p style="margin-top: 6px; font-size: 10px; color: #94a3b8;">
+        Standard medical receipt template from <a href="https://receiptnumber.com" style="color: inherit; text-decoration: underline;">receiptnumber.com</a>
+      </p>
+    </div>
+  </div>
+</body>
+</html>

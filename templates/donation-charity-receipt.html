@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>501(c)(3) Charitable Donation Receipt Template</title>
+  <link rel="stylesheet" href="../styles/receipts.css">
+  <style>
+    .toolbar { display: flex; gap: 12px; margin-bottom: 12px; }
+    .btn { background: #2563eb; color: #fff; border: none; border-radius: 6px; padding: 8px 16px; font-size: 14px; cursor: pointer; text-decoration: none; }
+    .btn-secondary { background: #475569; }
+    .btn:hover { opacity: 0.9; }
+    .tax-badge { display: inline-block; background: #eff6ff; color: #1d4ed8; border: 1px solid #bfdbfe; font-size: 11px; font-weight: 700; padding: 3px 8px; border-radius: 4px; text-transform: uppercase; }
+  </style>
+</head>
+<body>
+  <div class="toolbar no-print">
+    <button class="btn" onclick="window.print()">🖨️ Print Receipt</button>
+    <a href="../index.html" class="btn btn-secondary">← Back to Gallery</a>
+    <a href="https://receiptnumber.com/receipt-template/word" target="_blank" rel="noopener" class="btn">📄 Download Word Format</a>
+  </div>
+
+  <div class="receipt-card" style="max-width: 580px; border-top: 4px solid #2563eb;">
+    <div class="receipt-header" style="text-align: left; display: flex; justify-content: space-between; align-items: flex-start;">
+      <div>
+        <div class="tax-badge">Official 501(c)(3) Tax-Exempt Receipt</div>
+        <h2 style="font-size: 20px; color: #0f172a; margin-top: 6px;">COMMUNITY HOPE FOUNDATION</h2>
+        <div class="receipt-meta">EIN (Federal Tax ID): 84-1928374</div>
+        <div class="receipt-meta">{{ADDRESS_m09cbb5p}}, Denver, CO 80202</div>
+      </div>
+      <div style="text-align: right;">
+        <div style="font-size: 15px; font-weight: 700; color: #2563eb;">RECEIPT #: DON-2026-1102</div>
+        <div class="receipt-meta">Date: February 02, 2026</div>
+      </div>
+    </div>
+
+    <div class="receipt-divider"></div>
+
+    <div style="font-size: 13px; line-height: 1.8; color: #334155;">
+      <div><strong>Donor Name:</strong> {{PERSON_f7t76l3m}} & {{PERSON_d52x8r8p}}</div>
+      <div><strong>Donor Address:</strong> {{ADDRESS_y1a2z57r}}, Boulder, CO 80301</div>
+      <div><strong>Contribution Date:</strong> January 28, 2026</div>
+      <div><strong>Payment Type:</strong> Check #4092 (Cleared)</div>
+      <div><strong>Fund Designation:</strong> Youth Literacy & STEM Education Fund</div>
+    </div>
+
+    <div class="receipt-totals" style="border: none; padding-top: 4px; margin-top: 12px;">
+      <div class="receipt-row" style="font-size: 15px;">
+        <span>Total Tax-Deductible Contribution:</span>
+        <span style="font-size: 20px; font-weight: 800; color: #16a34a;">$500.00 USD</span>
+      </div>
+    </div>
+
+    <div style="margin-top: 16px; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 6px; padding: 12px; font-size: 11px; line-height: 1.6; color: #475569;">
+      <strong>IRS Section 170(f)(8) Compliance Statement:</strong><br>
+      Community Hope Foundation is a recognized 501(c)(3) charitable organization under the Internal Revenue Code. No goods or services were provided in exchange for this contribution other than intangible religious or charitable benefits. Please retain this receipt for your federal income tax filing.
+    </div>
+
+    <div class="receipt-signature-line" style="margin-top: 32px;">
+      <div>
+        <div>Authorized Officer Signature:</div>
+        <div style="font-family: 'Brush Script MT', cursive, sans-serif; font-size: 22px; color: #1e3a8a; margin-top: 4px;">{{PERSON_m076q2r8}}</div>
+        <div style="font-size: 11px; color: #64748b;">Executive Director, Community Hope Foundation</div>
+      </div>
+    </div>
+
+    <div class="receipt-footer">
+      <p>Thank you for your generous support of our community programs.</p>
+      <p style="margin-top: 6px; font-size: 10px; color: #94a3b8;">
+        Printable donation receipt template by <a href="https://receiptnumber.com" style="color: inherit; text-decoration: underline;">receiptnumber.com</a>
+      </p>
+    </div>
+  </div>
+</body>
+</html>

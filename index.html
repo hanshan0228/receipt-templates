@@ -4,7 +4,24 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Open-Source HTML & CSS Receipt Templates | Free Online Receipt Maker</title>
-  <meta name="description" content="Free open-source printable HTML and CSS receipt templates for small businesses, freelancers, landlords, and retailers. 100% customizable with zero dependencies.">
+  <meta name="description" content="Free open-source printable HTML and CSS receipt templates (Thermal 80mm, Restaurant, Cash, Rent, Gas, Taxi, Hotel, Medical). 100% customizable with zero dependencies.">
+  <link rel="canonical" href="https://hanshan0228.github.io/receipt-templates/">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareSourceCode",
+    "name": "Open-Source Receipt Templates",
+    "programmingLanguage": "HTML, CSS, JavaScript",
+    "license": "https://opensource.org/licenses/MIT",
+    "description": "Clean, zero-dependency printable receipt templates for thermal POS, restaurants, landlords, and small businesses.",
+    "codeRepository": "https://github.com/hanshan0228/receipt-templates",
+    "author": {
+      "@type": "Organization",
+      "name": "ReceiptNumber",
+      "url": "https://receiptnumber.com"
+    }
+  }
+  </script>
   <style>
     :root {
       --primary: #2563eb;
@@ -26,7 +43,7 @@
     }
     header {
       border-bottom: 1px solid var(--border);
-      padding: 32px 24px;
+      padding: 36px 24px;
       text-align: center;
       background: linear-gradient(180deg, #1e293b 0%, #0f172a 100%);
     }
@@ -35,14 +52,14 @@
       background: rgba(37, 99, 235, 0.2);
       color: #60a5fa;
       border: 1px solid rgba(96, 165, 250, 0.3);
-      padding: 4px 12px;
+      padding: 4px 14px;
       border-radius: 9999px;
       font-size: 12px;
       font-weight: 600;
       margin-bottom: 12px;
     }
     h1 {
-      font-size: 2.2rem;
+      font-size: 2.3rem;
       font-weight: 800;
       letter-spacing: -0.02em;
       margin-bottom: 12px;
@@ -50,12 +67,14 @@
     p.subhead {
       color: var(--muted);
       font-size: 1.1rem;
-      max-width: 640px;
+      max-width: 680px;
       margin: 0 auto 20px auto;
     }
     .cta-banner {
       display: inline-flex;
       align-items: center;
+      flex-wrap: wrap;
+      justify-content: center;
       gap: 12px;
       background: rgba(16, 185, 129, 0.1);
       border: 1px solid rgba(16, 185, 129, 0.3);
@@ -71,18 +90,20 @@
       border-radius: 6px;
       text-decoration: none;
       font-weight: 600;
+      transition: background 0.2s;
     }
+    .cta-banner a:hover { background: #059669; }
     .container {
-      max-width: 1200px;
+      max-width: 1280px;
       margin: 40px auto;
       padding: 0 24px;
     }
     .grid {
       display: grid;
-      grid-template-columns: 280px 1fr;
+      grid-template-columns: 320px 1fr;
       gap: 32px;
     }
-    @media (max-width: 768px) {
+    @media (max-width: 900px) {
       .grid { grid-template-columns: 1fr; }
     }
     .nav-panel {
@@ -92,33 +113,36 @@
       padding: 20px;
       height: fit-content;
     }
-    .nav-panel h3 {
-      font-size: 14px;
+    .nav-category {
+      font-size: 11px;
       text-transform: uppercase;
-      letter-spacing: 0.05em;
-      color: var(--muted);
-      margin-bottom: 12px;
+      letter-spacing: 0.08em;
+      color: #94a3b8;
+      margin-top: 18px;
+      margin-bottom: 8px;
+      font-weight: 700;
     }
+    .nav-category:first-of-type { margin-top: 0; }
     .nav-list {
       list-style: none;
       display: flex;
       flex-direction: column;
-      gap: 8px;
+      gap: 6px;
     }
     .nav-btn {
       width: 100%;
       text-align: left;
-      padding: 10px 14px;
+      padding: 9px 12px;
       border-radius: 6px;
       background: transparent;
       border: 1px solid transparent;
       color: var(--text);
       cursor: pointer;
-      font-size: 14px;
+      font-size: 13.5px;
       font-weight: 500;
       display: flex;
       align-items: center;
-      gap: 10px;
+      gap: 8px;
       transition: all 0.2s;
     }
     .nav-btn:hover {
@@ -128,6 +152,7 @@
     .nav-btn.active {
       background: var(--primary);
       color: #fff;
+      border-color: var(--primary);
     }
     .preview-box {
       background: var(--surface);
@@ -150,6 +175,7 @@
     .preview-actions {
       display: flex;
       gap: 10px;
+      flex-wrap: wrap;
     }
     .action-btn {
       padding: 8px 16px;
@@ -159,13 +185,15 @@
       text-decoration: none;
       cursor: pointer;
       border: none;
+      transition: opacity 0.2s;
     }
+    .action-btn:hover { opacity: 0.9; }
     .action-btn.primary { background: var(--primary); color: #fff; }
     .action-btn.secondary { background: #334155; color: #fff; }
     .action-btn.outline { background: transparent; border: 1px solid var(--border); color: #cbd5e1; }
     .preview-frame {
       width: 100%;
-      height: 640px;
+      height: 680px;
       border: 1px solid var(--border);
       border-radius: 8px;
       background: #f4f5f8;
@@ -177,7 +205,7 @@
     }
     .resource-cards {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
       gap: 16px;
       margin-top: 20px;
     }
@@ -209,25 +237,25 @@
 <body>
 
   <header>
-    <div class="badge">MIT Licensed • 100% Zero-Dependency HTML & CSS</div>
-    <h1>Open-Source Receipt Templates</h1>
+    <div class="badge">10 Open-Source Templates • 100% Zero-Dependency HTML & CSS • MIT License</div>
+    <h1>Open-Source Printable Receipt Templates</h1>
     <p class="subhead">
-      Pixel-perfect, print-ready receipt templates designed for POS slips, restaurants, rental properties, cash transactions, and gas mileage logs.
+      Pixel-perfect, print-ready receipt layouts for POS slips, restaurants, rental properties, cash payments, gas mileage, taxi fares, hotel folios, and medical copays.
     </p>
     <div class="cta-banner">
-      <span>Need dynamic customization, receipt number generation, or instant PDF/Excel exports?</span>
-      <a href="https://receiptnumber.com" target="_blank" rel="noopener">Use ReceiptNumber Builder →</a>
+      <span>Need automated tax calculations, custom logos, receipt numbers, and instant PDF/Excel exports?</span>
+      <a href="https://receiptnumber.com" target="_blank" rel="noopener">Open ReceiptNumber Online Maker →</a>
     </div>
   </header>
 
   <div class="container">
     <div class="grid">
       <div class="nav-panel">
-        <h3>Template Showcase</h3>
+        <div class="nav-category">Retail & POS</div>
         <ul class="nav-list">
           <li>
             <button class="nav-btn active" onclick="loadPreview('templates/thermal-80mm.html', this)">
-              🛒 Thermal 80mm POS Slip
+              🛒 80mm POS Thermal Slip
             </button>
           </li>
           <li>
@@ -235,6 +263,10 @@
               🍽️ Restaurant Guest Check
             </button>
           </li>
+        </ul>
+
+        <div class="nav-category">Business & Property</div>
+        <ul class="nav-list">
           <li>
             <button class="nav-btn" onclick="loadPreview('templates/rent-receipt.html', this)">
               🏠 Property Rent Receipt
@@ -246,27 +278,60 @@
             </button>
           </li>
           <li>
-            <button class="nav-btn" onclick="loadPreview('templates/gas-station-receipt.html', this)">
-              ⛽ Gas Station & Mileage
+            <button class="nav-btn" onclick="loadPreview('templates/donation-charity-receipt.html', this)">
+              🎗️ 501(c)(3) Donation Receipt
             </button>
           </li>
         </ul>
 
-        <h3 style="margin-top: 24px;">Format Downloads</h3>
+        <div class="nav-category">Travel & Transportation</div>
+        <ul class="nav-list">
+          <li>
+            <button class="nav-btn" onclick="loadPreview('templates/gas-station-receipt.html', this)">
+              ⛽ Gas Station & Mileage Log
+            </button>
+          </li>
+          <li>
+            <button class="nav-btn" onclick="loadPreview('templates/taxi-cab-receipt.html', this)">
+              🚕 Taxi & Rideshare Fare
+            </button>
+          </li>
+          <li>
+            <button class="nav-btn" onclick="loadPreview('templates/hotel-folio-receipt.html', this)">
+              🏨 Hotel Lodging Guest Folio
+            </button>
+          </li>
+        </ul>
+
+        <div class="nav-category">Healthcare & Multilingual</div>
+        <ul class="nav-list">
+          <li>
+            <button class="nav-btn" onclick="loadPreview('templates/medical-doctor-receipt.html', this)">
+              🩺 Medical & HSA Copay
+            </button>
+          </li>
+          <li>
+            <button class="nav-btn" onclick="loadPreview('templates/recibo-de-pago-es.html', this)">
+              🇪🇸 Recibo de Pago (Español)
+            </button>
+          </li>
+        </ul>
+
+        <div class="nav-category">Downloads & Guides</div>
         <ul class="nav-list">
           <li>
             <a href="https://receiptnumber.com/receipt-template/excel" target="_blank" rel="noopener" class="nav-btn">
-              📊 Excel Templates (.xlsx)
+              📊 Excel Receipt Templates
             </a>
           </li>
           <li>
             <a href="https://receiptnumber.com/receipt-template/word" target="_blank" rel="noopener" class="nav-btn">
-              📄 Word Templates (.docx)
+              📄 Word Receipt Templates
             </a>
           </li>
           <li>
-            <a href="https://receiptnumber.com/es/recibo-de-pago" target="_blank" rel="noopener" class="nav-btn">
-              🇪🇸 Modelos en Español
+            <a href="docs/irs-receipt-requirements.md" class="nav-btn">
+              📋 IRS Receipt Rules Guide
             </a>
           </li>
         </ul>
@@ -290,33 +355,41 @@
     </div>
 
     <div class="resources-section">
-      <h3 style="font-size: 20px; font-weight: 700; margin-bottom: 8px;">Online Receipt Maker & Template Library</h3>
+      <h3 style="font-size: 20px; font-weight: 700; margin-bottom: 8px;">Online Receipt Maker & Accounting Resource Hub</h3>
       <p style="color: var(--muted); font-size: 14px;">Explore our comprehensive collection of official receipt generators, tax-deductible expense tools, and multilingual templates:</p>
 
       <div class="resource-cards">
         <a href="https://receiptnumber.com" target="_blank" rel="noopener" class="res-card">
           <h4>Free Online Receipt Maker</h4>
-          <p>Create professional, customizable receipts in seconds with instant PDF generation.</p>
+          <p>Create professional, customizable receipts in seconds with instant PDF download and zero watermarks.</p>
         </a>
         <a href="https://receiptnumber.com/receipt-template/excel" target="_blank" rel="noopener" class="res-card">
-          <h4>Excel Receipt Templates</h4>
-          <p>Spreadsheet formulas for automated item calculations, discounts, and sales taxes.</p>
+          <h4>Excel Receipt Templates (.xlsx)</h4>
+          <p>Pre-built spreadsheet formulas for automatic line item multiplication, sales tax rates, and discounts.</p>
+        </a>
+        <a href="https://receiptnumber.com/receipt-template/word" target="_blank" rel="noopener" class="res-card">
+          <h4>Word Receipt Templates (.docx)</h4>
+          <p>Clean Microsoft Word document receipts with fillable tables and editable headers.</p>
         </a>
         <a href="https://receiptnumber.com/templates/rent-receipt" target="_blank" rel="noopener" class="res-card">
           <h4>Rent Receipt Generator</h4>
-          <p>Landlord and tenant payment documentation with legal signatures and balance tracking.</p>
+          <p>Landlord and tenant payment documentation with legal signatures, lease dates, and balance tracking.</p>
         </a>
         <a href="https://receiptnumber.com/templates/gas-station-receipt" target="_blank" rel="noopener" class="res-card">
           <h4>Gas Station Mileage Receipts</h4>
-          <p>Business travel expense claims with odometer readings and fuel tax logs.</p>
+          <p>Business travel expense claims with fuel pump details, taxes, and odometer mileage logs.</p>
         </a>
         <a href="https://receiptnumber.com/templates/cash-receipt" target="_blank" rel="noopener" class="res-card">
           <h4>Cash Payment Receipts</h4>
-          <p>Official acknowledgment vouchers for cash services, contractors, and handymen.</p>
+          <p>Official acknowledgment vouchers for cash services, contractors, handymen, and private sales.</p>
         </a>
         <a href="https://receiptnumber.com/es/recibo-de-pago" target="_blank" rel="noopener" class="res-card">
           <h4>Modelo de Recibo en Español</h4>
-          <p>Formatos descargables de recibos de dinero, nómina y alquiler en español.</p>
+          <p>Formatos descargables de recibos de pago, constancias de dinero y justificantes de arrendamiento.</p>
+        </a>
+        <a href="docs/irs-receipt-requirements.md" class="res-card">
+          <h4>IRS Audit Receipt Guide</h4>
+          <p>Detailed breakdown of IRS § 274 requirements, the $75 rule, and digital receipt compliance.</p>
         </a>
       </div>
     </div>
@@ -344,9 +417,29 @@
         title: 'Official Cash Payment Voucher',
         desc: 'Legally compliant cash transaction receipt with spelled-out amounts and contractor signatures.'
       },
+      'templates/donation-charity-receipt.html': {
+        title: '501(c)(3) Charitable Donation Receipt',
+        desc: 'Official non-profit tax deduction receipt with required IRS IRC § 170 substantiation language.'
+      },
       'templates/gas-station-receipt.html': {
         title: 'Gas Station Fuel & Mileage Reimbursement',
         desc: 'Pump gallonage log, fuel taxes, and odometer mileage tracker for business deductions.'
+      },
+      'templates/taxi-cab-receipt.html': {
+        title: 'Taxi Cab & Rideshare Fare Receipt',
+        desc: 'Meter fare breakdown, airport tolls, and tip calculation for business travel claims.'
+      },
+      'templates/hotel-folio-receipt.html': {
+        title: 'Hotel Lodging Guest Folio Receipt',
+        desc: 'Itemized room nights, occupancy taxes, room service, and valet parking ledger.'
+      },
+      'templates/medical-doctor-receipt.html': {
+        title: 'Medical Clinic & Healthcare Copay Receipt',
+        desc: 'CPT code billing breakdown and insurance adjustment receipt for HSA/FSA reimbursement.'
+      },
+      'templates/recibo-de-pago-es.html': {
+        title: 'Modelo de Recibo de Pago en Efectivo (Español)',
+        desc: 'Plantilla de constancia de entrega de dinero con base imponible, desglose de IVA y firmas.'
       }
     };
 

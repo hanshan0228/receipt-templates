@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Taxi Cab & Rideshare Fare Receipt Template</title>
+  <link rel="stylesheet" href="../styles/receipts.css">
+  <style>
+    .toolbar { display: flex; gap: 12px; margin-bottom: 12px; }
+    .btn { background: #2563eb; color: #fff; border: none; border-radius: 6px; padding: 8px 16px; font-size: 14px; cursor: pointer; text-decoration: none; }
+    .btn-secondary { background: #475569; }
+    .btn:hover { opacity: 0.9; }
+  </style>
+</head>
+<body>
+  <div class="toolbar no-print">
+    <button class="btn" onclick="window.print()">🖨️ Print Receipt</button>
+    <a href="../index.html" class="btn btn-secondary">← Back to Gallery</a>
+    <a href="https://receiptnumber.com/templates/gas-station-receipt" target="_blank" rel="noopener" class="btn">🚗 Travel & Mileage Tools</a>
+  </div>
+
+  <div class="receipt-card receipt-thermal">
+    <div class="receipt-header">
+      <h1>METRO TAXI CAB CO.</h1>
+      <div class="receipt-meta">Medallion / Vehicle #TX-4091</div>
+      <div class="receipt-meta">Driver ID: #8824 (Michael R.)</div>
+      <div class="receipt-meta">Dispatch: (555) 328-8294</div>
+    </div>
+
+    <div class="receipt-divider"></div>
+
+    <div class="receipt-row" style="font-size: 12px;">
+      <span>Receipt #: TX-2026-9014</span>
+      <span>02/11/2026 09:24 AM</span>
+    </div>
+
+    <div class="receipt-divider"></div>
+
+    <div style="font-size: 12px; line-height: 1.6; margin-bottom: 8px;">
+      <div><strong>Trip Pickup:</strong> Downtown Marriott Hotel</div>
+      <div><strong>Trip Drop-off:</strong> International Airport (Terminal 2)</div>
+      <div><strong>Distance Traveled:</strong> 14.8 miles (Elapsed: 28 mins)</div>
+    </div>
+
+    <table class="receipt-table">
+      <thead>
+        <tr>
+          <th>Charge Item</th>
+          <th class="num">Rate</th>
+          <th class="num">Amount</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Base Flag Drop Fare</td>
+          <td class="num">Flat</td>
+          <td class="num">$4.50</td>
+        </tr>
+        <tr>
+          <td>Metered Distance (14.8 mi)</td>
+          <td class="num">$2.60/mi</td>
+          <td class="num">$38.48</td>
+        </tr>
+        <tr>
+          <td>Airport Surcharge / Toll</td>
+          <td class="num">State</td>
+          <td class="num">$5.00</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="receipt-totals">
+      <div class="receipt-row">
+        <span>Meter Fare Subtotal:</span>
+        <span>$47.98</span>
+      </div>
+      <div class="receipt-row">
+        <span>Driver Tip (20%):</span>
+        <span>$9.60</span>
+      </div>
+      <div class="receipt-row grand-total">
+        <span>TOTAL CHARGED</span>
+        <span>$57.58</span>
+      </div>
+      <div class="receipt-row" style="margin-top: 6px; font-size: 12px;">
+        <span>Payment: Apple Pay (Visa ...8390)</span>
+        <span>Auth: #039182</span>
+      </div>
+    </div>
+
+    <div class="receipt-footer">
+      <p>Retain this receipt for corporate travel reimbursement.</p>
+      <p style="margin-top: 6px; font-size: 10px; color: #94a3b8;">
+        Free printable ride receipt template by <a href="https://receiptnumber.com" style="color: inherit; text-decoration: underline;">receiptnumber.com</a>
+      </p>
+    </div>
+  </div>
+</body>
+</html>
