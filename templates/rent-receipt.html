@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Monthly Property Rent Payment Receipt Template</title>
+  <link rel="stylesheet" href="../styles/receipts.css">
+  <style>
+    .toolbar {
+      display: flex;
+      gap: 12px;
+      margin-bottom: 12px;
+    }
+    .btn {
+      background: #2563eb;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      padding: 8px 16px;
+      font-size: 14px;
+      cursor: pointer;
+      text-decoration: none;
+    }
+    .btn-secondary {
+      background: #475569;
+    }
+    .btn:hover {
+      opacity: 0.9;
+    }
+    .rent-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      font-size: 13px;
+      margin: 16px 0;
+    }
+    .rent-box {
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 6px;
+      padding: 10px 12px;
+    }
+    .rent-box label {
+      display: block;
+      font-size: 11px;
+      text-transform: uppercase;
+      color: #64748b;
+      margin-bottom: 4px;
+      font-weight: 600;
+    }
+    .rent-box span {
+      font-weight: 500;
+      color: #0f172a;
+    }
+  </style>
+</head>
+<body>
+  <div class="toolbar no-print">
+    <button class="btn" onclick="window.print()">🖨️ Print Receipt</button>
+    <a href="../index.html" class="btn btn-secondary">← Back to Gallery</a>
+    <a href="https://receiptnumber.com/templates/rent-receipt" target="_blank" rel="noopener" class="btn">🏠 Online Rent Generator</a>
+  </div>
+
+  <div class="receipt-card" style="max-width: 580px;">
+    <div class="receipt-header" style="text-align: left; display: flex; justify-content: space-between; align-items: flex-start;">
+      <div>
+        <h2 style="font-size: 20px; color: #1e293b;">RENT PAYMENT RECEIPT</h2>
+        <div class="receipt-meta">Official Tenant Payment Acknowledgment</div>
+      </div>
+      <div style="text-align: right;">
+        <div style="font-size: 14px; font-weight: 700; color: #2563eb;">RECEIPT #: RR-2026-0201</div>
+        <div class="receipt-meta">Date: February 1, 2026</div>
+      </div>
+    </div>
+
+    <div class="receipt-divider"></div>
+
+    <div class="rent-grid">
+      <div class="rent-box">
+        <label>Received From (Tenant)</label>
+        <span>{{PERSON_m076q2r8}} & {{PERSON_d52x8r8p}}</span>
+      </div>
+      <div class="rent-box">
+        <label>Landlord / Management</label>
+        <span>Oakridge Property Management LLC</span>
+      </div>
+      <div class="rent-box" style="grid-column: span 2;">
+        <label>Rental Property Address</label>
+        <span>Apt 4B, {{ADDRESS_43e49s6b}}, Austin, TX 78701</span>
+      </div>
+      <div class="rent-box">
+        <label>Rental Period Covered</label>
+        <span>Feb 01, 2026 – Feb 28, 2026</span>
+      </div>
+      <div class="rent-box">
+        <label>Payment Method</label>
+        <span>Direct ACH / Bank Transfer (Ref: #ACH8841)</span>
+      </div>
+    </div>
+
+    <table class="receipt-table" style="margin-top: 16px;">
+      <thead>
+        <tr>
+          <th>Description</th>
+          <th class="num">Amount Due</th>
+          <th class="num">Amount Paid</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Monthly Apartment Rent (Feb 2026)</td>
+          <td class="num">$1,850.00</td>
+          <td class="num">$1,850.00</td>
+        </tr>
+        <tr>
+          <td>Reserved Parking Space (#22)</td>
+          <td class="num">$75.00</td>
+          <td class="num">$75.00</td>
+        </tr>
+        <tr>
+          <td>Water & Utility Trash Sub-metering</td>
+          <td class="num">$45.00</td>
+          <td class="num">$45.00</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="receipt-totals">
+      <div class="receipt-row">
+        <span>Total Charges</span>
+        <span>$1,970.00</span>
+      </div>
+      <div class="receipt-row grand-total" style="color: #16a34a;">
+        <span>TOTAL RECEIVED</span>
+        <span>$1,970.00</span>
+      </div>
+      <div class="receipt-row" style="margin-top: 6px; font-weight: 600;">
+        <span>Remaining Balance Due:</span>
+        <span>$0.00 (PAID IN FULL)</span>
+      </div>
+    </div>
+
+    <div class="receipt-signature-line" style="margin-top: 40px; padding-top: 12px;">
+      <div>
+        <div>Authorized Landlord Signature:</div>
+        <div style="font-family: 'Brush Script MT', cursive, sans-serif; font-size: 20px; color: #1e3a8a; margin-top: 4px;">{{PERSON_b2d2p51e}}</div>
+        <div style="font-size: 11px; color: #64748b;">Oakridge Properties</div>
+      </div>
+      <div style="text-align: right;">
+        <div>Tenant Acknowledgment:</div>
+        <div style="font-family: 'Brush Script MT', cursive, sans-serif; font-size: 20px; color: #1e3a8a; margin-top: 4px;">{{PERSON_m076q2r8}}</div>
+        <div style="font-size: 11px; color: #64748b;">Signed on: 02/01/2026</div>
+      </div>
+    </div>
+
+    <div class="receipt-footer">
+      <p>Retain this receipt for personal tax deduction or tenancy records.</p>
+      <p style="margin-top: 6px; font-size: 10px; color: #94a3b8;">
+        Free printable rent receipt template from <a href="https://receiptnumber.com/templates/rent-receipt" style="color: inherit; text-decoration: underline;">receiptnumber.com</a>
+      </p>
+    </div>
+  </div>
+</body>
+</html>

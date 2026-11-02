@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurant Dining Guest Check Receipt Template</title>
+  <link rel="stylesheet" href="../styles/receipts.css">
+  <style>
+    .toolbar {
+      display: flex;
+      gap: 12px;
+      margin-bottom: 12px;
+    }
+    .btn {
+      background: #2563eb;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      padding: 8px 16px;
+      font-size: 14px;
+      cursor: pointer;
+      text-decoration: none;
+    }
+    .btn-secondary {
+      background: #475569;
+    }
+    .btn:hover {
+      opacity: 0.9;
+    }
+  </style>
+</head>
+<body>
+  <div class="toolbar no-print">
+    <button class="btn" onclick="window.print()">🖨️ Print Receipt</button>
+    <a href="../index.html" class="btn btn-secondary">← Back to Gallery</a>
+    <a href="https://receiptnumber.com/receipt-template/excel" target="_blank" rel="noopener" class="btn">📊 Download Excel Version</a>
+  </div>
+
+  <div class="receipt-card receipt-thermal" style="border: 1px solid #cbd5e1; border-radius: 4px;">
+    <div class="receipt-header">
+      <h2>THE CORNER BISTRO</h2>
+      <div class="receipt-meta">Fine Dining & Craft Cocktails</div>
+      <div class="receipt-meta">{{ADDRESS_l3e83nfp}}, Seattle, WA 98101</div>
+      <div class="receipt-meta">Tel: {{PHONE_s8q425q4}}</div>
+    </div>
+
+    <div class="receipt-divider"></div>
+
+    <div class="receipt-row" style="font-size: 12px;">
+      <span>Table: 14 (Guests: 2)</span>
+      <span>Date: 02/11/2026</span>
+    </div>
+    <div class="receipt-row" style="font-size: 12px;">
+      <span>Server: Jessica T.</span>
+      <span>Time: 19:45 PM</span>
+    </div>
+    <div class="receipt-row" style="font-size: 12px;">
+      <span>Order #: CHK-94021</span>
+      <span>Station: POS-2</span>
+    </div>
+
+    <div class="receipt-divider"></div>
+
+    <table class="receipt-table">
+      <thead>
+        <tr>
+          <th>Item Description</th>
+          <th class="num">Qty</th>
+          <th class="num">Amount</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Truffle Arancini (Starter)</td>
+          <td class="num">1</td>
+          <td class="num">$16.00</td>
+        </tr>
+        <tr>
+          <td>Pan-Seared Pacific Halibut</td>
+          <td class="num">1</td>
+          <td class="num">$38.00</td>
+        </tr>
+        <tr>
+          <td>Grass-Fed Ribeye Steak 12oz</td>
+          <td class="num">1</td>
+          <td class="num">$48.00</td>
+        </tr>
+        <tr>
+          <td>Pinot Noir Glass (Willamette)</td>
+          <td class="num">2</td>
+          <td class="num">$32.00</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="receipt-totals">
+      <div class="receipt-row">
+        <span>Food & Beverage Subtotal</span>
+        <span>$134.00</span>
+      </div>
+      <div class="receipt-row">
+        <span>City & State Tax (10.25%)</span>
+        <span>$13.74</span>
+      </div>
+      <div class="receipt-row grand-total">
+        <span>SUBTOTAL DUE</span>
+        <span>$147.74</span>
+      </div>
+
+      <div style="margin-top: 16px; border-top: 1px dashed #cbd5e1; padding-top: 8px; font-size: 12px;">
+        <div class="receipt-row" style="font-weight: 600;">
+          <span>Suggested Gratuity Guide:</span>
+        </div>
+        <div class="receipt-row">
+          <span>18% = $24.12</span>
+          <span>Total = $171.86</span>
+        </div>
+        <div class="receipt-row">
+          <span>20% = $26.80</span>
+          <span>Total = $174.54</span>
+        </div>
+        <div class="receipt-row">
+          <span>22% = $29.48</span>
+          <span>Total = $177.22</span>
+        </div>
+      </div>
+
+      <div style="margin-top: 20px; font-size: 12px;">
+        <div class="receipt-row" style="margin-bottom: 8px;">
+          <span>Tip / Gratuity:</span>
+          <span>$_______________</span>
+        </div>
+        <div class="receipt-row" style="font-weight: 700; margin-bottom: 12px;">
+          <span>Final Total Charged:</span>
+          <span>$_______________</span>
+        </div>
+        <div class="receipt-signature-line" style="margin-top: 16px;">
+          <span>Customer Signature: _______________________</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="receipt-footer">
+      <p>Thank you for dining with us!</p>
+      <p style="margin-top: 8px; font-size: 10px; color: #94a3b8;">
+        Free printable receipt builder powered by <a href="https://receiptnumber.com" style="color: inherit; text-decoration: underline;">receiptnumber.com</a>
+      </p>
+    </div>
+  </div>
+</body>
+</html>

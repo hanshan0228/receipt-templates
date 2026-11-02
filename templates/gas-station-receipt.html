@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gas Station Fuel & Mileage Reimbursement Receipt Template</title>
+  <link rel="stylesheet" href="../styles/receipts.css">
+  <style>
+    .toolbar {
+      display: flex;
+      gap: 12px;
+      margin-bottom: 12px;
+    }
+    .btn {
+      background: #2563eb;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      padding: 8px 16px;
+      font-size: 14px;
+      cursor: pointer;
+      text-decoration: none;
+    }
+    .btn-secondary {
+      background: #475569;
+    }
+    .btn:hover {
+      opacity: 0.9;
+    }
+  </style>
+</head>
+<body>
+  <div class="toolbar no-print">
+    <button class="btn" onclick="window.print()">🖨️ Print Receipt</button>
+    <a href="../index.html" class="btn btn-secondary">← Back to Gallery</a>
+    <a href="https://receiptnumber.com/templates/gas-station-receipt" target="_blank" rel="noopener" class="btn">⛽ Online Gas Receipt Maker</a>
+  </div>
+
+  <div class="receipt-card receipt-thermal">
+    <div class="receipt-header">
+      <h1>SUNSHINE EXPRESS #108</h1>
+      <div class="receipt-meta">SUNSHINE ENERGY CORP</div>
+      <div class="receipt-meta">{{ADDRESS_m2k73n0m}}, Phoenix, AZ 85001</div>
+      <div class="receipt-meta">Tel: {{PHONE_8k5780d6}}</div>
+    </div>
+
+    <div class="receipt-divider"></div>
+
+    <div class="receipt-row" style="font-size: 12px;">
+      <span>Receipt #: GS-99201</span>
+      <span>02/11/2026 08:15 AM</span>
+    </div>
+    <div class="receipt-row" style="font-size: 12px;">
+      <span>Pump Number: #06</span>
+      <span>Product: Regular Unleaded 87</span>
+    </div>
+
+    <div class="receipt-divider"></div>
+
+    <table class="receipt-table">
+      <thead>
+        <tr>
+          <th>Description</th>
+          <th class="num">Gallons</th>
+          <th class="num">Price/Gal</th>
+          <th class="num">Amount</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Reg Unleaded Gas</td>
+          <td class="num">12.450 G</td>
+          <td class="num">$3.499</td>
+          <td class="num">$43.56</td>
+        </tr>
+        <tr>
+          <td>Windshield Washer Fluid</td>
+          <td class="num">1</td>
+          <td class="num">$3.99</td>
+          <td class="num">$3.99</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="receipt-totals">
+      <div class="receipt-row">
+        <span>Subtotal</span>
+        <span>$47.55</span>
+      </div>
+      <div class="receipt-row">
+        <span>State & City Tax</span>
+        <span>$1.85</span>
+      </div>
+      <div class="receipt-row grand-total">
+        <span>TOTAL CHARGE</span>
+        <span>$49.40</span>
+      </div>
+      <div class="receipt-row" style="margin-top: 6px; font-size: 12px;">
+        <span>Payment: Mastercard Credit</span>
+        <span>**** 9912</span>
+      </div>
+      <div class="receipt-row" style="font-size: 12px;">
+        <span>Auth Code: 029381</span>
+        <span>Invoice #: INV-44910</span>
+      </div>
+    </div>
+
+    <div style="margin-top: 16px; border-top: 1px dashed #cbd5e1; padding-top: 8px; font-size: 11px;">
+      <div style="font-weight: 700; text-transform: uppercase; margin-bottom: 4px;">Business Expense Log:</div>
+      <div class="receipt-row">
+        <span>Odometer Start: 42,105 mi</span>
+        <span>Odometer End: 42,420 mi</span>
+      </div>
+      <div class="receipt-row">
+        <span>Business Trip Distance:</span>
+        <span>315 miles</span>
+      </div>
+      <div class="receipt-row">
+        <span>Purpose: Client On-Site Visit</span>
+      </div>
+    </div>
+
+    <div class="receipt-footer">
+      <p>Thank you for stopping by!</p>
+      <p>Drive safe and visit us again.</p>
+      <p style="margin-top: 8px; font-size: 10px; color: #94a3b8;">
+        Standard fuel receipt template from <a href="https://receiptnumber.com/templates/gas-station-receipt" style="color: inherit; text-decoration: underline;">receiptnumber.com</a>
+      </p>
+    </div>
+  </div>
+</body>
+</html>
